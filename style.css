@@ -1,0 +1,138 @@
+body{
+    background: linear-gradient(to top left , rgb(238, 145, 145) , white 30%, rgb(238, 145, 145) );
+    background-attachment: fixed;
+}
+.navb{
+    justify-content: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    display: flex;
+    margin: 0px, 10px;
+    padding: 10px;
+    font-size: 25px;
+    background-color: rgba(0,0,0,0.9);
+    
+}
+
+.navb .welcome{
+    color: lightcoral;
+}
+.gameContainer{
+
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.container{
+    display: grid;
+    grid-template-rows: repeat(3,10vw);
+    grid-template-columns: repeat(3,10vw);
+    font-family:cursive ;
+}
+
+.box{
+    border: 2px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6vw;
+    cursor: pointer;
+}
+.box:hover{
+    background:rgba(255,255,255,0.1);
+}
+
+.gameInfo{
+    margin: 0;
+    padding: 0px 50px;
+        font-size: 30px;
+        font-weight: 500;
+        font-family: cursive;
+    
+}
+
+.imgbox img {
+    width: 0px;
+    transition: width 1s ease-in-out;
+}
+
+#reset{
+    margin: 2rem;
+    cursor: pointer;
+    padding: 7px 20px;
+    background-color: lightcoral;
+    border: 2px solid black;
+    border-radius: 16px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.line{
+    background-color: lightcoral;
+    height: 3px;
+    width: 0vw;
+    position: absolute;
+    transition: width 1s ease-in-out;
+}
+.br-0{
+    border-right: 0;
+}
+
+.bl-0{
+    border-left: 0;
+}
+
+.bt-0{
+    border-top: 0;
+}
+
+.bb-0{
+    border-bottom: 0;
+}
+
+@media screen and (max-width : 750px)
+{
+    .navb{
+        font-size: 20px;
+    }
+    .gameContainer{
+        flex-wrap: wrap;
+    }
+    .gameInfo{
+        margin-top: 40px;
+        font-size: 1.3rem;
+    }
+
+    .gameInfo h2 {
+        display: flex;
+        font-size: 20px;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+    }
+
+    .gameInfo .info{
+    display: flex;
+    font-size: 20px;
+    align-items: center;
+    justify-content: center;
+    }
+
+    
+    .container {
+    display: grid;
+    grid-template-rows: repeat(3,20vw);
+    grid-template-columns: repeat(3,20vw);
+    font-family: cursive;
+}
+
+.line{
+    background-color: lightcoral;
+    height: 3px;
+    width: 0;
+    position: absolute;
+    transition: width 1s ease-in-out;
+}
+   
+}
